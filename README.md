@@ -30,5 +30,3 @@ This project highlights my background as a Computer Science undergraduate, the t
 - Footer with LinkedIn and GitHub links
 
 ---
-
-## Project Structur
