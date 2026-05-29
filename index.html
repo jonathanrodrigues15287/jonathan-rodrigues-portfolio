@@ -3,113 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jonathan Rodrigues — Computer Science undergraduate passionate about AI, ML, Web Development, and Software Engineering. Explore my projects and connect.">
+    <title>Jonathan Rodrigues | Portfolio</title>
 
-    <title>Jonathan Rodrigues's Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <div class="nav-logo">JR</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-badge">
+            <span class="dot"></span>
+            Open to opportunities
+        </div>
+        <h1>Jonathan<br>Rodrigues</h1>
+        <p class="hero-subtitle">
+            Computer Science undergraduate passionate about building innovative software,
+            exploring AI & ML, and crafting elegant digital experiences.
+        </p>
+        <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                View Projects
+            </a>
+            <a href="#contact" class="btn btn-outline">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
     <div class="container">
 
-        <h1>Jonathan Rodrigues</h1>
-
-        <section>
-            <h2>Introduction</h2>
-
-            <p>
-                Motivated undergraduate in Computer Science with a keen interest in IT Infrastructure,
-                Software Development, Artificial Intelligence, Machine Learning, Web Development and
-                Data Analytics. Eager to apply academic knowledge to real-world challenges, contribute
-                to dynamic teams, and grow within an organization that values curiosity and initiative.
-                Actively seeking opportunities to gain hands-on exposure and build a strong professional foundation.
-            </p>
-        </section>
-
-        <section>
-            <h2>Skills</h2>
-
-            <ol>
-                <li>Languages: Python, HTML, CSS, LaTeX</li>
-                <li>Concepts: OOP, File Handling, UI Design</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Education</h2>
-
-            <ol>
-                <li>
-                    Primary Education: Beacon High School
-                    <small>[2010-2023]</small>
-                </li>
-
-                <li>
-                    Junior College: Champions Science Junior College
-                    <small>[2023-2025]</small>
-                </li>
-
-                <li>
-                    Undergraduate(B.Tech): Fr. Conceicao Rodrigues College of Engineering
-                    <small>[2025-2029]</small>
-                </li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Projects Worked On</h2>
-
-            <ol>
-                <li>
-                    <span class="project-title">Music App:</span>
-
-                    Kivy Music Player — A mobile music player app built with Python and Kivy,
-                    designed for Android (360×640px). Features multiple artist playlists,
-                    a persistent playback bar, volume control, and Android media session integration.
-                </li>
-
-                <li>
-                    <span class="project-title">Personal Expense Tracker App:</span>
-
-                    Expense Tracker — A mobile-first personal expense tracker built with Python and Kivy.
-                    Track daily spending, categorize expenses, and stay on top of finances
-                    through a clean and scrollable mobile UI.
-                </li>
-            </ol>
-        </section>
-
-        <footer>
-
-            <p>Connect with me</p>
-
-            <div class="footer-links">
-
-                <a href="https://www.linkedin.com/in/jonathan-rodrigues-95447b385"
-                   target="_blank"
-                   rel="noopener noreferrer">
-
-                    LinkedIn
-
-                </a>
-
-                <a href="https://github.com/jonathanrodrigues15287"
-                   target="_blank"
-                   rel="noopener noreferrer">
-
-                    GitHub
-
-                </a>
-
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="section-header reveal">
+                <span class="section-label">About Me</span>
+                <h2 class="section-title">Introduction</h2>
+                <div class="section-divider"></div>
             </div>
+            <div class="glass-card about-card reveal reveal-delay-1">
+                <p>
+                    Motivated undergraduate in Computer Science with a keen interest in IT Infrastructure,
+                    Software Development, Artificial Intelligence, Machine Learning, Web Development and
+                    Data Analytics. Eager to apply academic knowledge to real-world challenges, contribute
+                    to dynamic teams, and grow within an organization that values curiosity and initiative.
+                    Actively seeking opportunities to gain hands-on exposure and build a strong professional foundation.
+                </p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Projects Built</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">2025</div>
+                        <div class="stat-label">B.Tech Start</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <p class="copyright">
-                © 2026 Jonathan Rodrigues
-            </p>
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="section-header reveal">
+                <span class="section-label">What I Know</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="glass-card skill-category reveal reveal-delay-1">
+                    <h3>
+                        <span class="icon">💻</span>
+                        Languages
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="pill">Python</span>
+                        <span class="pill">HTML</span>
+                        <span class="pill">CSS</span>
+                        <span class="pill">LaTeX</span>
+                    </div>
+                </div>
+                <div class="glass-card skill-category reveal reveal-delay-2">
+                    <h3>
+                        <span class="icon">⚙️</span>
+                        Concepts
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="pill">OOP</span>
+                        <span class="pill">File Handling</span>
+                        <span class="pill">UI Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        </footer>
+        <!-- Education Section -->
+        <section class="section" id="education">
+            <div class="section-header reveal">
+                <span class="section-label">My Journey</span>
+                <h2 class="section-title">Education</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal reveal-delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2010 — 2023</span>
+                        <div class="timeline-title">Beacon High School</div>
+                        <div class="timeline-desc">Primary Education</div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal reveal-delay-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2023 — 2025</span>
+                        <div class="timeline-title">Champions Science Junior College</div>
+                        <div class="timeline-desc">Junior College</div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal reveal-delay-3">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025 — 2029</span>
+                        <div class="timeline-title">Fr. Conceicao Rodrigues College of Engineering</div>
+                        <div class="timeline-desc">B.Tech — Computer Science</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="section-header reveal">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="project-card-body">
+                        <div class="project-icon">🎵</div>
+                        <h3>Kivy Music Player</h3>
+                        <p>
+                            A mobile music player app built with Python and Kivy,
+                            designed for Android (360×640px). Features multiple artist playlists,
+                            a persistent playback bar, volume control, and Android media session integration.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Kivy</span>
+                            <span class="project-tag">Android</span>
+                            <span class="project-tag">Mobile</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal reveal-delay-2">
+                    <div class="project-card-body">
+                        <div class="project-icon">💰</div>
+                        <h3>Personal Expense Tracker</h3>
+                        <p>
+                            A mobile-first personal expense tracker built with Python and Kivy.
+                            Track daily spending, categorize expenses, and stay on top of finances
+                            through a clean and scrollable mobile UI.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Kivy</span>
+                            <span class="project-tag">Finance</span>
+                            <span class="project-tag">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-inner">
+            <div class="reveal">
+                <h2 class="footer-heading">Let's Connect</h2>
+                <p class="footer-sub">Feel free to reach out — I'm always open to new opportunities and conversations.</p>
+            </div>
+
+            <div class="social-links reveal reveal-delay-1">
+                <a href="https://www.linkedin.com/in/jonathan-rodrigues-95447b385"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="social-link"
+                   aria-label="LinkedIn Profile">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/jonathanrodrigues15287"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="social-link"
+                   aria-label="GitHub Profile">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer-divider"></div>
+            <p class="copyright reveal reveal-delay-2">
+                © 2026 <span>Jonathan Rodrigues</span>. Built with passion.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // ===== Navbar scroll effect =====
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // ===== Mobile menu =====
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const navOverlay = document.getElementById('navOverlay');
+
+        function toggleMenu() {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('open');
+            navOverlay.classList.toggle('active');
+            document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+        }
+
+        hamburger.addEventListener('click', toggleMenu);
+        navOverlay.addEventListener('click', toggleMenu);
+
+        // Close menu on link click
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('open')) {
+                    toggleMenu();
+                }
+            });
+        });
+
+        // ===== Scroll reveal animations =====
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+    </script>
 
 </body>
 </html>
