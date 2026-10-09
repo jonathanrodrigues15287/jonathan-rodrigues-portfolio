@@ -26,6 +26,7 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Internships</a></li>
+                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
@@ -44,14 +45,16 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <!-- Particle canvas -->
+        <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+
         <div class="hero-badge">
             <span class="dot"></span>
             Open to opportunities
         </div>
         <h1>Jonathan<br>Rodrigues</h1>
         <p class="hero-subtitle">
-            Computer Science undergraduate passionate about building innovative software,
-            exploring AI & ML, and crafting elegant digital experiences.
+            <span id="typewriter"></span><span class="cursor-blink">|</span>
         </p>
         <div class="hero-cta">
             <a href="#projects" class="btn btn-primary">
@@ -84,15 +87,15 @@
                 </p>
                 <div class="about-stats">
                     <div class="stat">
-                        <div class="stat-number">3+</div>
+                        <div class="stat-number" data-target="4" data-suffix="">4</div>
                         <div class="stat-label">Projects Built</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number">9+</div>
+                        <div class="stat-number" data-target="9" data-suffix="+">9+</div>
                         <div class="stat-label">Technologies</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number">2025</div>
+                        <div class="stat-number" data-target="2025" data-suffix="">2025</div>
                         <div class="stat-label">B.Tech Start</div>
                     </div>
                 </div>
@@ -130,9 +133,7 @@
             </div>
             <div class="skills-grid">
                 <div class="glass-card skill-category reveal reveal-delay-1">
-                    <h3>
-                        Languages
-                    </h3>
+                    <h3>Languages</h3>
                     <div class="skill-pills">
                         <span class="pill">Python</span>
                         <span class="pill">HTML</span>
@@ -143,9 +144,7 @@
                     </div>
                 </div>
                 <div class="glass-card skill-category reveal reveal-delay-2">
-                    <h3>
-                        Concepts
-                    </h3>
+                    <h3>Concepts</h3>
                     <div class="skill-pills">
                         <span class="pill">OOP</span>
                         <span class="pill">Data Persistence</span>
@@ -157,9 +156,7 @@
                     </div>
                 </div>
                 <div class="glass-card skill-category reveal reveal-delay-3">
-                    <h3>
-                    Developer Tools
-                    </h3>
+                    <h3>Developer Tools</h3>
                     <div class="skill-pills">
                         <span class="pill">LaTeX</span>
                         <span class="pill">Git</span>
@@ -168,10 +165,8 @@
                         <span class="pill">DataGrip</span>
                     </div>
                 </div>
-                <div class="glass-card skill-category reveal reveal-delay-3">
-                    <h3>
-                    Frameworks and Libraries
-                    </h3>
+                <div class="glass-card skill-category reveal reveal-delay-4">
+                    <h3>Frameworks &amp; Libraries</h3>
                     <div class="skill-pills">
                         <span class="pill">Pandas</span>
                         <span class="pill">Numpy</span>
@@ -180,8 +175,6 @@
                         <span class="pill">Pyinstaller</span>
                     </div>
                 </div>
-
-
             </div>
         </section>
 
@@ -295,6 +288,30 @@
                         </a>
                     </div>
                 </div>
+
+                <div class="project-card reveal reveal-delay-4">
+                    <div class="project-card-body">
+                        <h3>Scholaris</h3>
+                        <p>
+                            Scholaris is a client-side college personal assistant web app, a single-page site with a dashboard, 
+                            timetable upload with OCR parsing, an assignment/deadline tracker, a Pomodoro-style study timer, 
+                            and a CGPA/SGPA calculator.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">OCR</span>
+                            <span class="project-tag">HTML</span>
+                        </div>
+                        <a href="https://github.com/jonathanrodrigues15287/Scholaris"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-outline project-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                            View GitHub Repository
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -332,6 +349,50 @@
             </div>
         </section>
 
+        <!-- Achievements Section -->
+        <section class="section" id="achievements">
+            <div class="section-header reveal">
+                <span class="section-label">Honors &amp; Recognition</span>
+                <h2 class="section-title">Achievements</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="achievements-grid">
+                <!-- Achievement 1: Adobe University Hackathon -->
+                <div class="achievement-card reveal reveal-delay-1">
+                    <div>
+                        <div class="achievement-header">
+                            <div class="achievement-badge-wrap">
+                                <span class="achievement-badge">Round 2 Qualifier</span>
+                                <span class="achievement-year">2026</span>
+                            </div>
+                        </div>
+                        <h3 class="achievement-title">Adobe University Hackathon</h3>
+                        <div class="achievement-org">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                            Adobe
+                        </div>
+                        <p class="achievement-desc">
+                            Successfully advanced to Round 2 in the nationwide Adobe University Hackathon.
+                            Demonstrated strong algorithmic problem solving, software architecture design,
+                            and modern engineering capabilities under rigorous competitive benchmarks.<br><br>
+                            Total registrations: ~301,000<br>
+                            Teams that cleared Round 1: ~26,760 teams<br>
+                        </p>
+                    </div>
+                    <div class="achievement-actions">
+                        <a href="adobe_university_hackathon_2026.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            View Certificate
+                        </a>
+                        <a href="adobe_university_hackathon_2026.pdf" download="adobe_university_hackathon_2026.pdf" class="btn btn-outline">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            Download Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
 
 
@@ -344,7 +405,22 @@
                 <p class="footer-sub">Feel free to reach out — I'm always open to new opportunities and conversations.</p>
             </div>
 
-            <div class="social-links reveal reveal-delay-1">
+            <!-- Copy email button -->
+            <div class="reveal reveal-delay-1" style="margin-bottom: 24px;">
+                <button id="copyEmailBtn"
+                        class="btn btn-outline"
+                        data-email="jonathanrodrigues15287@gmail.com"
+                        aria-label="Copy email address to clipboard"
+                        style="margin: 0 auto; border-radius: 50px;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    Copy Email Address
+                </button>
+            </div>
+
+            <div class="social-links reveal reveal-delay-2">
                 <a href="https://www.linkedin.com/in/jonathan-rodrigues-95447b385"
                    target="_blank"
                    rel="noopener noreferrer"
@@ -366,94 +442,20 @@
             </div>
 
             <div class="footer-divider"></div>
-            <p class="copyright reveal reveal-delay-2">
+            <p class="copyright reveal reveal-delay-3">
                 © 2026 <span>Jonathan Rodrigues</span>. Built with passion.
             </p>
         </div>
     </footer>
 
-    <script>
-        // ===== Navbar scroll effect =====
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            navbar.classList.toggle('scrolled', window.scrollY > 50);
-        });
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
 
-        // ===== Mobile menu =====
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('navLinks');
-        const navOverlay = document.getElementById('navOverlay');
-
-        function toggleMenu() {
-            hamburger.classList.toggle('active');
-            navLinks.classList.toggle('open');
-            navOverlay.classList.toggle('active');
-            document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
-        }
-
-        hamburger.addEventListener('click', toggleMenu);
-        navOverlay.addEventListener('click', toggleMenu);
-
-        // Close menu on link click
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (navLinks.classList.contains('open')) {
-                    toggleMenu();
-                }
-            });
-        });
-
-        // ===== Scroll reveal animations =====
-        const revealElements = document.querySelectorAll('.reveal');
-
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        });
-
-        revealElements.forEach(el => revealObserver.observe(el));
-
-        // ===== Theme toggle =====
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
-        
-        // Check for saved theme preference or use system preference
-        const getPreferredTheme = () => {
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme) {
-                return savedTheme;
-            }
-            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        };
-
-        const setTheme = (theme) => {
-            document.documentElement.setAttribute('data-theme', theme);
-            localStorage.setItem('theme', theme);
-            
-            // Update icon
-            if (theme === 'dark') {
-                themeIcon.innerHTML = '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>';
-            } else {
-                themeIcon.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>';
-            }
-        };
-
-        // Initialize theme
-        setTheme(getPreferredTheme());
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            setTheme(newTheme);
-        });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
